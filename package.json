@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint": "stylelint \"src/**/*.{css,less,scss,sass}\" --fix",
+    "check": "bun lint && bun stylelint"
   },
   "dependencies": {
     "@types/node": "20.6.0",
@@ -21,7 +23,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recommended": "13.0.0",
+    "stylelint-order": "^6.0.3"
   },
   "devDependencies": {
     "husky": "^8.0.0"

@@ -26,3 +26,6 @@ jobs:
 
       - name: ESLint with bun
         run: bun run lint
+
+      - name: Stylelint with bun
+        run: bun run stylelint
